@@ -16,7 +16,14 @@ class CreateDogsTable extends Migration
         Schema::create('dogs', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->string('raca');
+            $table->string('descricao');
+            $table->string('nome_cientifico');
+            $table->string('expectativa_vida');
+            $table->string('origem');
+            $table->string('altura');
+            $table->string('cores');
+            $table->string('personalidade');
+            $table->string('peso');
             $table->timestamps();
         });
     }
